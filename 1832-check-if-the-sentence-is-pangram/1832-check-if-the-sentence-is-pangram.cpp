@@ -1,9 +1,15 @@
 class Solution {
 public:
-   bool checkIfPangram(string sentence) {
-        set<int> s;
-        for (auto& c: sentence)
-            s.insert(c);
-        return s.size() == 26;
+    bool checkIfPangram(string sentence) {
+        set<int> S;
+        
+        for(auto it : sentence){
+            S.insert(it);
+        }
+        
+        if(S.size() == 26)
+            return true;
+        else 
+            return false;
     }
 };
