@@ -1,6 +1,6 @@
 class Solution {
 public:
-    string countAndSay(int n) {
+   string countAndSay(int n) {
     if (n == 0) return "";
     string res = "1";
     while (--n) {
